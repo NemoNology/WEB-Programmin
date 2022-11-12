@@ -1,5 +1,23 @@
-// var MEl = document.getElementById("MDiv");
 
+
+function print(str)
+{
+	alert(str);
+}
+function Test() {
+	
+	var MEl = document.getElementsByClassName("Square");
+
+	for(var i in MEl)
+	{
+		console.log(MEl[i])
+		
+		MEl[i].onclick = function()
+		{
+			print('Me?');
+		}
+	}
+}
 // MEl.onmousedown = onMouseDown;
 
 // function onMouseDown(e)
