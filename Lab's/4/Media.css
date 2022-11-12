@@ -1,0 +1,38 @@
+@media (max-width: 900px)
+{
+	
+	.CircleIn { background: yellow; }
+	
+}
+
+@media (max-width: 600px)
+{
+	
+	.CircleIn { background: red;}
+	
+}
+
+
+@media (max-width: 490px)
+{
+	
+	BODY 
+	{ 
+	
+		background-image: URL("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREmKWeDc2gUxGUdfv2dFJiasxmco3iq123qSvGpYaG&s")
+		
+	}
+	
+	.CircleIn 
+	{ 
+		width: 0px; 
+		height: 0px; 
+	}
+		
+	.Square 
+	{ 
+		width: 0px; 
+		height: 0px; 
+	}
+	
+}
