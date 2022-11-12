@@ -1,0 +1,43 @@
+.Circle 
+{
+	
+	width: 30px;
+	height: 30px;
+	background: #7CFC00;
+	border-radius: 50%;
+	position: relative;
+	
+}
+
+.Square
+{
+	
+	width: 10px;
+	height: 100px;
+	background: #4682B4;
+	margin: 30px;
+	
+	
+}
+
+.TriangleUp
+{
+	
+	width: 0; 
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid #9400D3;
+	
+}
+
+.TriangleDown
+{
+	
+	width: 0; 
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 100px solid #D8BFD8;
+	
+}
