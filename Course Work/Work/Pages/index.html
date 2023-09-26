@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="fill">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,20 +11,43 @@
       media="screen"
       href="/Work/Styles/main.css"
     />
-    <link rel="stylesheet" href="/Work/Styles/fonts.css" />
     <link rel="icon" href="../Data/Icons/index.ico" />
     <script src="/Work/Scripts/main.js"></script>
   </head>
 
-  <body class="color-gradient-main background-fixed">
-    <header class="container-main rounded-one color-light">
-      <h1 class="margin-left-big text-style-">Pe-Pic</h1>
+  <body class="color-gradient-main background-fixed fill">
+    <!-- TODO: when user is sign in -> 
+      show account icon instead of Вход и регистрация -->
+    <header
+      class="container-main rounded-one color-light fill-horizontal fixed"
+    >
+      <h1>
+        <a
+          href="/Work/Pages/index.html"
+          class="text-style-1 text-black margin-left-medium hover-main"
+          >Pe-Pic</a
+        >
+      </h1>
       <div>
-        <a class="text-style-2 padding-small" href="/Work/Pages/">Sign In</a>
-        <a class="text-style-2 padding-small" href="/Work/Pages/">Sign Up</a>
+        <a class="text-style-2 padding-small hover-sub" href="/Work/Pages/"
+          >Вход</a
+        >
+        <a class="text-style-2 padding-small hover-sub" href="/Work/Pages/"
+          >Регистрация</a
+        >
       </div>
     </header>
+    <div class="fill container-center">
+      <div
+        class="container-column rounded-two padding-big margin-medium color-gradient-radial-main"
+      >
+        <p class="text-style-1 text-light margin-medium">
+          Надоело забывать смешные анекдоты в форме "вопрос-ответ"?
+        </p>
+        <p class="text-style-2 text-light text-right">
+          Здесь Вы сможете сохранить все анекдоты
+        </p>
+      </div>
+    </div>
   </body>
-
-  <!-- <div class="blue-main-rectangle" style="left: -15%; top: -15%;"></div> -->
 </html>
