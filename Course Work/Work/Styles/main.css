@@ -217,6 +217,29 @@
   background: radial-gradient(#5080cc, #294f8b);
 }
 
+.hover-button-simple:focus,
+.hover-button-simple-1:hover {
+  background: #dcdcdc;
+}
+
 .hidden {
   display: none;
+}
+
+.table-main {
+  border-collapse: collapse;
+}
+
+.table-main th {
+  padding: 1%;
+  background-color: #294f8b;
+  color: #dcdcdc;
+}
+
+.table-main td {
+  border-bottom: 0.3vw solid #808080;
+}
+
+.table-main tr:hover {
+  background-color: #808080;
 }

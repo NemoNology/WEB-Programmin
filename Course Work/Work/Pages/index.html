@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="/Work/Styles/main.css" />
     <link rel="icon" href="../Data/Icons/index.ico" />
-    <script src="/Work/Scripts/main.js"></script>
   </head>
 
   <body class="color-gradient-main background-fixed fill">
@@ -22,18 +21,23 @@
         >
       </h1>
       <div>
-        <a href="/Work/Pages/profile.html"
-        name="pageProfile"
-        class="text-style-2 padding-small hover-sub hidden">Профиль</a>
-        <div name="pageSignUpAndIn">
-          <a class="text-style-2 padding-small hover-sub" href="/Work/Pages/login.html"
-          >Вход</a
-        >
         <a
-          class="text-style-2 padding-small hover-sub"
-          href="/Work/Pages/registration.html"
-          >Регистрация</a
+          href="/Work/Pages/profile.html"
+          name="pageProfile"
+          class="text-style-2 padding-small hover-sub hidden"
+          >Профиль</a
         >
+        <div name="pageSignUpAndIn">
+          <a
+            class="text-style-2 padding-small hover-sub"
+            href="/Work/Pages/login.html"
+            >Вход</a
+          >
+          <a
+            class="text-style-2 padding-small hover-sub"
+            href="/Work/Pages/registration.html"
+            >Регистрация</a
+          >
         </div>
       </div>
     </header>
@@ -50,9 +54,14 @@
           </p>
         </div>
         <div class="container-center">
-          <!-- TODO: table of jokes -->
+          <table
+            class="fill-horizontal margin-medium color-light text-center table-main hidden"
+          >
+            <th>Вопрос</th>
+            <th>Ответ</th>
+          </table>
         </div>
-      </div>     
+      </div>
     </div>
   </body>
 </html>
