@@ -216,3 +216,7 @@
 .hover-button-simple:hover {
   background: radial-gradient(#5080cc, #294f8b);
 }
+
+.hidden {
+  display: none;
+}
