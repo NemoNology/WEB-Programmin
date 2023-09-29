@@ -63,8 +63,7 @@
   border-radius: 5vw;
 }
 
-.rounded-all-sub
-{
+.rounded-all-sub {
   border-radius: 3vw 5vw;
 }
 
@@ -102,8 +101,7 @@
   display: flex;
   flex-direction: column;
 }
-.container-row
-{
+.container-row {
   display: flex;
   flex-direction: row;
 }
@@ -124,8 +122,7 @@
   color: black;
 }
 
-.text-bold
-{
+.text-bold {
   font-weight: bold;
 }
 
@@ -189,8 +186,7 @@
   padding: 10%;
 }
 
-.border-solid
-{
+.border-solid {
   border-style: solid;
 }
 
@@ -202,34 +198,21 @@
   border-style: none;
 }
 
+.hover-main:focus,
 .hover-main:hover {
   display: block;
   color: #294f8b;
   transform: scale(1.15) rotate(1deg);
 }
 
+.hover-sub:focus,
 .hover-sub:hover {
   text-decoration: underline;
   text-decoration-thickness: 0.5vh;
   text-decoration-color: #294f8b;
 }
 
+.hover-button-simple:focus,
 .hover-button-simple:hover {
-  background: radial-gradient(#5080cc, #294f8b)
-}
-
-/* TODO: left fill animation */
-.hover-button-main:hover {
-  animation: left-fill 2s normal linear;
-}
-
-@keyframes left-fill {
-  0% {
-    background-color: #5080cc;
-    transform: translateX(0);
-  }
-  100% {
-    background-color: #5080cc;
-    transform: translateX(20);
-  }
+  background: radial-gradient(#5080cc, #294f8b);
 }
