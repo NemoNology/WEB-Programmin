@@ -11,8 +11,6 @@
   </head>
 
   <body class="color-gradient-main background-fixed fill">
-    <!-- TODO: when user is sign in -> 
-      show account icon instead of Вход и регистрация -->
     <header
       class="container-main rounded-one color-light fill-horizontal fixed"
     >
@@ -24,7 +22,11 @@
         >
       </h1>
       <div>
-        <a class="text-style-2 padding-small hover-sub" href="/Work/Pages/"
+        <a href="/Work/Pages/profile.html"
+        name="pageProfile"
+        class="text-style-2 padding-small hover-sub hidden">Профиль</a>
+        <div name="pageSignUpAndIn">
+          <a class="text-style-2 padding-small hover-sub" href="/Work/Pages/login.html"
           >Вход</a
         >
         <a
@@ -32,19 +34,25 @@
           href="/Work/Pages/registration.html"
           >Регистрация</a
         >
+        </div>
       </div>
     </header>
     <div class="fill container-center">
-      <div
-        class="container-column rounded-two padding-big margin-medium color-gradient-radial-main"
-      >
-        <p class="text-style-1 text-light margin-medium">
-          Надоело забывать смешные анекдоты в форме "вопрос-ответ"?
-        </p>
-        <p class="text-style-2 text-light text-right">
-          Здесь Вы сможете сохранить все анекдоты
-        </p>
-      </div>
+      <div class="container-column">
+        <div
+          class="container-column rounded-two padding-big margin-medium color-gradient-radial-main"
+        >
+          <p class="text-style-1 text-light margin-medium">
+            Надоело забывать смешные анекдоты в форме "вопрос-ответ"?
+          </p>
+          <p class="text-style-2 text-light text-right">
+            Здесь Вы сможете сохранить все анекдоты
+          </p>
+        </div>
+        <div class="container-center">
+          <!-- TODO: table of jokes -->
+        </div>
+      </div>     
     </div>
   </body>
 </html>
