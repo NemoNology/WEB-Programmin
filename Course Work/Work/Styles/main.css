@@ -63,20 +63,21 @@
   border-radius: 5vw;
 }
 
+.rounded-all-sub
+{
+  border-radius: 3vw 5vw;
+}
+
 .rounded-one {
   border-radius: 0vw 0vw 0vw 5vw;
 }
 
-.rounded-one-1 {
+.rounded-one-reversed {
   border-radius: 0vw 5vw 0vw 0vw;
 }
 
 .rounded-two {
   border-radius: 5vw 15vw;
-}
-
-.rounded-two-reversed {
-  border-radius: 15vw 5vw;
 }
 
 .text-style-1 {
@@ -98,7 +99,13 @@
 }
 
 .container-column {
+  display: flex;
   flex-direction: column;
+}
+.container-row
+{
+  display: flex;
+  flex-direction: row;
 }
 
 .text-center {
@@ -115,6 +122,11 @@
 
 .text-dark {
   color: black;
+}
+
+.text-bold
+{
+  font-weight: bold;
 }
 
 .fill {
@@ -134,8 +146,16 @@
   margin-left: 5vw;
 }
 
-.margin-top-medium {
-  margin-top: 5vw;
+.margin-right-medium {
+  margin-right: 5vw;
+}
+
+.margin-right-small {
+  margin-right: 2vw;
+}
+
+.margin-top-small {
+  margin-top: 2vw;
 }
 
 .margin-big {
@@ -146,6 +166,17 @@
   margin: 5%;
 }
 
+.margin-top-medium {
+  margin-top: 5%;
+}
+
+.margin-bottom-medium {
+  margin-bottom: 5%;
+}
+
+.margin-small {
+  margin: 2%;
+}
 .padding-small {
   padding: 1vw;
 }
@@ -158,6 +189,19 @@
   padding: 10%;
 }
 
+.border-solid
+{
+  border-style: solid;
+}
+
+.border-color-light {
+  border-color: #dcdcdc;
+}
+
+.border-none {
+  border-style: none;
+}
+
 .hover-main:hover {
   display: block;
   color: #294f8b;
@@ -168,4 +212,24 @@
   text-decoration: underline;
   text-decoration-thickness: 0.5vh;
   text-decoration-color: #294f8b;
+}
+
+.hover-button-simple:hover {
+  background: radial-gradient(#5080cc, #294f8b)
+}
+
+/* TODO: left fill animation */
+.hover-button-main:hover {
+  animation: left-fill 2s normal linear;
+}
+
+@keyframes left-fill {
+  0% {
+    background-color: #5080cc;
+    transform: translateX(0);
+  }
+  100% {
+    background-color: #5080cc;
+    transform: translateX(20);
+  }
 }
