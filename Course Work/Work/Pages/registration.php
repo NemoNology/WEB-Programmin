@@ -53,13 +53,13 @@
               <p class="text-light text-bold">Повторите пароль:</p>
             </td>
             <td>
-              <input type="password" name="repeatPassword" id="repeatPassword" />
+              <input type="password" name="repeatPassword" id="repeatPassword" onchange="" />
             </td>
           </tr>
         </table>
         <div class="container-column">
           <div class="container-center">
-            <button type="submit"
+            <button type="submit" name="button-registration"
               class="margin-top-small color-main text-light text-style-2 padding-medium rounded-all-sub border-none border-color-light hover-button-simple">
               Зарегистрироваться
             </button>
