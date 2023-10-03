@@ -37,8 +37,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
   }
 } else {
-  $jokes = getAllJokesByUserID($id);
-  $jokesCount = count($jokes);
+  if (!is_null($id)) {
+	$jokes = getAllJokesByUserID($id);
+	$jokesCount = count($jokes);
+  }
 }
 ?>
 
@@ -139,9 +141,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <th>#</th>
         <th>Вопрос</th>
         <th>Ответ</th>
-        <?php for ($i = 0; $i < $jokesCount; $i++) {
-          echo '<tr><td>' . $jokes[$i][1] . '</td><td>' . $jokes[$i][2] . '</td><td>' . $jokes[$i][3] . '</td></tr>';
-        } ?>
+        <?php if (!is_null($id)) {
+			for ($i = 0; $i < $jokesCount; $i++) {
+			echo '<tr><td>' . $jokes[$i][1] . '</td><td>' . $jokes[$i][2] . '</td><td>' . $jokes[$i][3] . '</td></tr>';
+        }} ?>
       </table>
     <?php endif; ?>
   </div>
