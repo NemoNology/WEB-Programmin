@@ -7,10 +7,6 @@ $dataBaseName = 'test';
 $dataBaseUser = 'root';
 $dataBasePassword = '123';
 $charset = 'utf8';
-$options = [
-    PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
-];
 
 try {
     $pdo = new PDO(
@@ -19,6 +15,8 @@ try {
         $dataBasePassword,
         $options
     );
+
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $e) {
     die($e);
 }

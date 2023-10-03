@@ -1,6 +1,6 @@
 -- Active: 1695999082930@@127.0.0.1@3306@webdevdb
 
-INSERT INTO `user`
+INSERT INTO users
 VALUES (
         DEFAULT,
         'пушистыймишка7',

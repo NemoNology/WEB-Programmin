@@ -1,10 +1,7 @@
 <?php
-require("DB.php");
-
-error_reporting(E_ERROR);
+require "DB.php";
 
 $errorMessage = '';
-global $id;
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $name = trim($_POST['name']);
@@ -19,22 +16,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } elseif (isThereUserWithThatMail($mail)) {
         $errorMessage = 'Данная почта уже занята';
     } else {
-        $id = addUser($name, $mail, $password);
+        $user = addUser($name, $mail, $password);
+        $_SESSION['id'] = $user['id'];
+        $_SESSION['name'] = $user['name'];
+        $_SESSION['mail'] = $user['mail'];
+        $_SESSION['password'] = $user['password'];
+        header('Location: ../Pages/index.php');
     }
 } else {
     $name = '';
     $mail = '';
 }
-
-
-
-
-
-
-// if (isThereUserWithThatMail($mail)) {
-//     $errorMassage = 'Данная почта уже используется';
-// } else {
-//     $errorMassage = '';
-//     $id = addUser($name, $mail, $password);
-// header("Location: index.php");
-// }
